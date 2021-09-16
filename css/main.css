@@ -1,4 +1,30 @@
+html, body{
+   margin: 0;
+}
+
+body {
+   background-color: #004400;
+   display: grid;
+   grid-template-rows: 25% 50% 25%;
+}
+
 header {
+   display: grid;
+   grid-template-columns: 1fr .9fr;
+   background-color: black;
+   width: 100%;
+   color: white;
+}
+
+.header-image {
+   padding: 10px;
+}
+
+.header-image img {
+   width: 100%;
+}
+
+footer {
    background-color: black;
    color: white;
 }
