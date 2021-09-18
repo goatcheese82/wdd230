@@ -3,6 +3,9 @@ html, body{
 }
 
 body {
+   height: 100%;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
    background-color: #004400;
    display: grid;
    grid-template-rows: 25% 50% 25%;
@@ -10,13 +13,18 @@ body {
 
 header {
    display: grid;
-   grid-template-columns: 1fr .9fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    background-color: black;
-   width: 100%;
    color: white;
 }
 
+header h1 {
+   grid-column-start: 3;
+}
+
 .header-image {
+   grid-column-start: 5;
+   grid-column-end: 6;
    padding: 10px;
 }
 
@@ -25,6 +33,11 @@ header {
 }
 
 footer {
+   display: grid;
+   text-align: center;
+   grid-template-rows: 1fr 1fr;
    background-color: black;
    color: white;
+   grid-row-start: 3;
+   grid-row-end: 5;
 }
