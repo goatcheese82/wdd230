@@ -1,7 +1,7 @@
 @media screen and (max-width: 600px) {
    main {
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       column-gap: 1%;
       row-gap: 1%;
       font-family: var(--paragraph-font);
