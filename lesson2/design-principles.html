@@ -9,10 +9,11 @@
    <link rel="stylesheet" href="css/dp-small.css">
    <link rel="stylesheet" href="css/dp-medium.css">
    <link rel="stylesheet" href="css/design-principles.css">
+   <script src="../js/dateFunctions.js"></script>
    <title>Examples of Design Principles</title>
 </head>
 
-<body>
+<body onload="getDate(), getModified()">
    <header>
       <h1>Design Principles Document</h1>
       <h2>Ben Smith</h2>
@@ -46,6 +47,10 @@
          </div>
       </div>
    </main>
+   <footer>
+      <div id="year"></div>
+      <div id="modified-date"></div>
+   </footer>
 </body>
 
 </html>
