@@ -15,6 +15,20 @@ a, a:visited {
    text-shadow: 1px 1px 5px gray;
 }
 
+header {
+   text-align: center;
+   background-color: black;
+   color: white;
+   font-family: var(--heading-font);
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.example-tile h1 {
+   background-color: rgba(50, 100, 150, 1);
+   margin: 0;
+}
+
 @media screen and (min-width: 800px) {
   main {
     display: grid;
