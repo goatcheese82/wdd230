@@ -1,3 +1,25 @@
 @media screen and (max-width: 600px) {
+   main {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 1%;
+      row-gap: 1%;
+      font-family: var(--paragraph-font);
+   }
+   
+   .example-tile {
+      display: grid;
+      grid-template-rows: 15% 5% 5% 60% 10%;
+      background-color: rgba(0,0,0,.2);
+      color: black;
+      text-align: center;
+      box-shadow: 2px 2px 2px black;
+      max-height: 100%;
+   }
+   
+   .example-tile img {
+      max-height: 100%;
+      justify-self: center;
+   }
    
 }
