@@ -7,3 +7,8 @@ const getModified = () => {
    let modDate = document.lastModified;
    document.getElementById("modified-date").innerHTML = `Last Updated: ${modDate}`;
 }
+
+window.onload=function(){
+   getDate();
+   getModified();
+}
