@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;400&display=swap');
 
+
+:root {
+   --heading-font: "Yaldevi";
+   --paragraph-font: "Yaldevi";
+}
+
 html, body {
    background-color: black;
    height: 100%;
    margin: 0;
    padding: 0;
+   font-family: var(--paragraph-font);
 }
 
 
@@ -22,6 +29,10 @@ header {
 #title a {
    color: white;
    text-decoration: none;
+}
+
+#title h3 {
+   font-size: .75em;
 }
 
 nav {
@@ -58,6 +69,11 @@ footer {
 .typography {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+h1 h2 h3 {
+   font-family: var(--heading-font);
+   font-weight: 400;
 }
 
 @media screen and (max-width: 600px) {
