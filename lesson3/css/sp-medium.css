@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
    body {
       display: grid;
       grid-template-rows: 20% 1fr 10%;
