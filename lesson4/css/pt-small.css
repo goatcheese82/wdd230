@@ -13,7 +13,6 @@ html, body {
 
 #logo-container {
    width: 100%;
-   background-color: var(--primary);
    padding: 20px 0 20px 0;
 }
 
@@ -30,6 +29,7 @@ nav {
    flex-direction: column;
    align-items: center;
    padding: 0 0 20px 0;
+   border: none;
 }
 
 #hamburger {
@@ -58,9 +58,10 @@ nav ul {
 }
 
 nav li {
-   padding: 10px;
    text-align: center;
+   padding: 10px 0 10px 0;
 }
+
 
 nav a {
    text-decoration: none;

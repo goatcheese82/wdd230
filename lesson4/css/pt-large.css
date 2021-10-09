@@ -1,0 +1,62 @@
+:root {
+   --primary: #04a7e3;
+   --secondary: #59c134;
+}
+
+header {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto auto;
+   grid-template-areas: 
+   'logo title title title'
+   'nav nav nav nav';
+}
+
+#logo-container {
+   text-align: center;
+   grid-area: logo;
+}
+
+#logo-container img {
+   width: 50%;
+   padding: 20px;
+}
+
+#title {
+   display: flex;
+   background-color: var(--primary);
+   grid-area: title;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#title h2 a {
+   font-size: 2em;
+   color: white;
+}
+
+#hamburger {
+   grid-area: hamburger;
+   display: none;
+}
+
+#navigation {
+   grid-area: nav;
+}
+
+nav ul {
+   display: flex;
+
+}
+
+nav li {
+   text-align: center;
+   flex-grow: 1;
+   padding: 10px;
+
+}
+
+nav li:hover {
+   color: white;
+   background-color: var(--secondary);
+}

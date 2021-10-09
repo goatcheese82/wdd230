@@ -8,8 +8,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../css/normalize.css">
    <link rel="stylesheet" href="css/global-styles.css" />
-   <link rel="stylesheet" href="css/pt-large.css">
-   <link rel="stylesheet" href="css/pt-medium.css">
+   <link rel="stylesheet" href="css/pt-large.css" media="screen and (min-width: 801px)">
+   <link rel="stylesheet" href="css/pt-medium.css" media="screen and (min-width: 601px)">
    <link rel="stylesheet" href="css/pt-small.css" media="screen and (max-width: 600px)">
    <script src="../js/dateFunctions.js" defer></script>
    <script src="js/menuToggle.js" defer></script>
@@ -27,37 +27,39 @@
          </h2>
          <h3>A Place to Get the Weather</h3>
       </div>
-      <div id="hamburger" onclick="menuToggle()">
-         <input type="checkbox" id="menuBox" class="menuToggleBox" />
-         <label for="menuBox">Menu</label>
+      <div id="navigation">
+         <div id="hamburger" onclick="menuToggle()">
+            <input type="checkbox" id="menuBox" class="menuToggleBox" />
+            <label for="menuBox">Menu</label>
+         </div>
+         <nav>
+            <ul>
+               <li>
+                  <a href="../">Home</a>
+               </li>
+               <li>
+                  <a href="./preston-4.html">Preston</a>
+               </li>
+               <li>
+                  <a href="./color-scheme.html">Soda Springs</a>
+               </li>
+               <li>
+                  <a href="./fish-haven.html">Fish Haven</a>
+               </li>
+               <li>
+                  <a href="./storm-center.html">Storm Center</a>
+               </li>
+               <li>
+                  <a href="./gallery.html">Gallery</a>
+               </li>
+            </ul>
+         </nav>
       </div>
-      <nav>
-         <ul>
-            <li>
-               <a href="./index.html">Home</a>
-            </li>
-            <li>
-               <a href="./preston-4.html">Preston</a>
-            </li>
-            <li>
-               <a href="./color-scheme.html">Soda Springs</a>
-            </li>
-            <li>
-               <a href="./fish-haven.html">Fish Haven</a>
-            </li>
-            <li>
-               <a href="./storm-center.html">Storm Center</a>
-            </li>
-            <li>
-               <a href="./gallery.html">Gallery</a>
-            </li>
-         </ul>
-      </nav>
    </header>
    <main>
-      <section>
-         <h1 id="city"></h1>
-         <img src="../images/image2.jpg" alt="Hero Image" />
+      <h1 id="city"></h1>
+      <section id="banner">
+         <img src="../images/image2.jpg" alt="Hero Image" id="hero-image"/>
       </section>
       <section id="summary"></section>
       <section id="forecast"></section>

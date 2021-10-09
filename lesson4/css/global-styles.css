@@ -15,8 +15,22 @@ header {
    background-color: black;
 }
 
+#logo-container {
+   background-color: var(--primary);
+}
+
 nav {
    background-color: black;
+   border-top: 2px solid var(--secondary);
+}
+
+nav ul {
+   list-style-type: none;
+}
+
+nav li:hover a {
+   background-color: var(--secondary);
+   color: white;
 }
 
 a {
@@ -27,6 +41,8 @@ a {
 #title {
    background-color: black;
 }
+
+
 
 footer {
    background-color: black;
