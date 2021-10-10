@@ -42,7 +42,15 @@ a {
    background-color: black;
 }
 
+#banner {
+   width: 100%;
+   background-color: gray;
+}
 
+#banner img {
+   width: 100%;
+   background-color: gray;
+}
 
 footer {
    background-color: black;
