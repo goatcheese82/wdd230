@@ -107,5 +107,7 @@ footer {
 
 .location-map {
    width: 80%;
+   padding: 10px;
+   color: black;
    background-color: gray;
 }
