@@ -3,6 +3,8 @@
    --secondary: #59c134;
 }
 
+/*Header*/
+
 header {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -61,6 +63,53 @@ nav li:hover {
    background-color: var(--secondary);
 }
 
+/***********Main************/
+
+main {
+   display: grid;
+}
+
+/***Summary***/
+
+#summary {
+   margin: -150px 0 0 40px;
+   background-color: rgba(0,100,0,.9);
+   color: white;
+   width: 300px;
+   padding: 10px;
+}
+
+.weather-item {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#summary p {
+   flex-grow: 1;
+   padding: 0;
+   margin: 0;
+}
+
+/******/
+
 #hero-container {
    height: 300px;
 }
+
+
+
+/***Article****/
+
+
+#article {
+
+   text-align: left;
+   margin: 5%;
+   background-color: rgba(0,100,0,.4);
+}
+
+.article-image-container {
+   float: right;
+   margin: 10px;
+}
+
