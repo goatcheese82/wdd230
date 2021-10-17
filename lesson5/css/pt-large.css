@@ -92,6 +92,15 @@ main {
 
 /******/
 
+#forecast {
+   text-align: center;  
+}
+
+#week {
+   display: flex;
+   width: 40%;
+}
+
 #hero-container {
    height: 300px;
 }
