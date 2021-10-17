@@ -92,13 +92,17 @@ main {
 
 /******/
 
+
 #forecast {
-   text-align: center;  
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
 }
 
 #week {
    display: flex;
-   width: 40%;
 }
 
 #hero-container {
