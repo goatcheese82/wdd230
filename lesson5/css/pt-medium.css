@@ -115,3 +115,39 @@ footer {
 #hero-container {
    height: 200px;
 }
+
+
+#summary {
+   margin: -150px 0 0 40px;
+   background-color: rgba(0,100,0,.9);
+   color: white;
+   width: 300px;
+   padding: 10px;
+}
+
+.weather-item {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#summary p {
+   flex-grow: 1;
+   padding: 0;
+   margin: 0;
+}
+
+#forecast {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+#week {
+   display: flex;
+}
+
+#hero-container {
+   height: 300px;
+}
