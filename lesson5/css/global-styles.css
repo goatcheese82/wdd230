@@ -50,7 +50,6 @@ a {
    margin: 10px 0 0 0;
    background-color: black;
    color: white;
-   text-shadow: 1px 1px 1px black;
    text-align: center;
 }
 
@@ -61,7 +60,6 @@ a {
 
 footer {
    background-color: black;
-   text-shadow: 1px 1px 1px black;
    color: white;
    padding : 20px 0 20px 0;
 }
