@@ -31,7 +31,7 @@ forecast.map(day => {
 
 let d = 0
 
-fetch('http://dataservice.accuweather.com/forecasts/v1/daily/5day/328732?apikey=AuOaYevIvNnAWS2NSFuwXOgG8M46A5Uw')
+fetch('https://dataservice.accuweather.com/forecasts/v1/daily/5day/328732?apikey=AuOaYevIvNnAWS2NSFuwXOgG8M46A5Uw')
    .then(response => response.json())
    .then(data => {
       data.DailyForecasts.map(day => {
