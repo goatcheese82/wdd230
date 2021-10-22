@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;400&display=swap');
+
+:root {
+   --font-prime: 'Yaldevi';
+   --primary: #04a7e3;
+   --secondary: #59c134;
+}
+
+html, body {
+   font-family: var(--font-prime);
+   background-color: var(--primary);
+   text-shadow: 1px 1px 1px black;
+}
+
+header {
+   background-color: black;
+}
+
+#logo-container {
+   background-color: var(--primary);
+}
+
+nav {
+   background-color: black;
+   border-top: 2px solid var(--secondary);
+}
+
+nav ul {
+   list-style-type: none;
+}
+
+nav li:hover a {
+   background-color: var(--secondary);
+   color: white;
+   text-shadow: 1px 1px 1px black;
+}
+
+a {
+   text-decoration: none;
+   color: var(--secondary);
+}
+
+#title {
+   background-color: black;
+}
+
+#banner {
+   width: 100%;
+   padding: 10px 0 0 0;
+   margin: 10px 0 0 0;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+#banner img {
+   width: 100%;
+   background-color: gray;
+}
+
+footer {
+   background-color: black;
+   color: white;
+   padding : 20px 0 20px 0;
+   text-align: center;
+}
+
+li a {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+
+#hero-container {
+   height: 150px;
+   overflow: hidden;
+}
+
+.active {
+   text-decoration: underline;
+}
+
+.social-links {
+   padding: 10px;
+}

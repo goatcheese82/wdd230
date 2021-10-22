@@ -1,0 +1,149 @@
+:root {
+   --primary: #04a7e3;
+   --secondary: #59c134;
+}
+
+html, body {
+   width: 100%;
+   margin: 0;
+   text-align: center;
+   color: white;
+}
+
+/******Header********/
+
+
+#logo-container {
+   width: 100%;
+   padding: 20px 0 20px 0;
+}
+
+
+header img {
+   width: 100px;
+}
+
+#title {
+   padding: 10px 0 10px 0;
+}
+
+nav {
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 0 20px 0;
+   border: none;
+}
+
+#hamburger {
+   padding: 0 0 20px 0;
+
+}
+
+#menuBox {
+   background: gray;
+   transition: box-shadow .3s;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 0;
+   appearance: none;
+}
+
+#menuBox:checked {
+   box-shadow: inset 0 0 0 20px var(--secondary);
+}
+
+nav ul {
+   list-style-type: none;
+   width: 100%;
+   margin: 0;
+}
+
+nav li {
+   text-align: center;
+   padding: 10px 0 10px 0;
+   margin: 0;
+}
+
+
+nav a {
+   text-decoration: none;
+   color: white;
+}
+
+
+/********banner*******/
+
+
+/*******summary*******/
+
+
+#summary {
+   position: absolute;
+   margin: -120px 0 0 40px;
+   background-color: rgba(0,100,0,.9);
+   width: 50%;
+   min-width: 150px;
+   padding: 10px;
+}
+
+.weather-item {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#summary p {
+   flex-grow: 1;
+   padding: 0;
+   margin: 0;
+}
+
+
+/*******forecast*****/
+
+#forecast {
+   display: none;
+}
+
+/*******Article*****/
+
+
+#article {
+   text-align: left;
+   margin: 5%;
+}
+
+.article-image-container {
+
+}
+
+.article-image {
+   display: block;
+   width: 100%;
+}
+
+
+/*******Footer*******/
+
+footer {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   align-items: center;
+   padding: 10%;
+}
+
+
+
+.social-links {
+   display: none;
+}
+
+.location-map {
+   display: none;
+   padding: 10px;
+   width: 80%;
+   background-color: gray;
+   color: black;
+}
