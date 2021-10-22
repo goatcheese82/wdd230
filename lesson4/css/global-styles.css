@@ -30,7 +30,7 @@ nav ul {
 
 nav li:hover a {
    background-color: var(--secondary);
-   color: white;
+   color: black;
 }
 
 a {

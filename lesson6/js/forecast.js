@@ -51,7 +51,6 @@ fetch('https://dataservice.accuweather.com/forecasts/v1/daily/5day/328732?apikey
       })
    });
 
-let obj = {};
 
 const toDay = fetch(`http://dataservice.accuweather.com/currentconditions/v1/${loc}?apikey=${apiKey}&details=true`)
 .then(response => response.json())
@@ -61,7 +60,7 @@ const toDay = fetch(`http://dataservice.accuweather.com/currentconditions/v1/${l
    document.getElementById('high').innerHTML = `${thisDay.Temperature.Imperial.Value}&#176;F`;
    document.getElementById('humidity').innerHTML = `${thisDay.RelativeHumidity}`;
    document.querySelector('#wind').innerHTML = `${thisDay.Wind.Speed.Imperial.Value} mph`;
-   let chill = calculateChill(thisDay.Temperature.Imperial.Value, thisDay.Wind.Speed.Imperial.Value);
-   document.getElementById('wind-chill').innerHTML = chill;
+   let chill = Math.round(calculateChill(thisDay.Temperature.Imperial.Value, thisDay.Wind.Speed.Imperial.Value));
+   document.getElementById('wind-chill').innerHTML = `${chill}`;
 })
 
