@@ -13,13 +13,13 @@ const days = [
 
 let forecast = [];
 
-let i = today;
-for (i; i < today + 5; i++) {
+let i = 0;
+for (i; i < 5; i++) {
    forecast.push((today + i) % 7)
 }
 
 
-let f = 0
+let f = 0;
 
 forecast.map(day => {
    f++;
