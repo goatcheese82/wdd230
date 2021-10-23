@@ -52,7 +52,7 @@ fetch('https://dataservice.accuweather.com/forecasts/v1/daily/5day/328732?apikey
    });
 
 
-const toDay = fetch(`http://dataservice.accuweather.com/currentconditions/v1/${loc}?apikey=${apiKey}&details=true`)
+const toDay = fetch(`https://dataservice.accuweather.com/currentconditions/v1/${loc}?apikey=${apiKey}&details=true`)
 .then(response => response.json())
 .then(data => {
    const thisDay = data[0];
