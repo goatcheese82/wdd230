@@ -1,0 +1,133 @@
+/*Header*/
+
+header {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto auto;
+   grid-template-areas: 
+   'logo title title title'
+   'nav nav nav nav';
+}
+
+#logo-container {
+   text-align: center;
+   grid-area: logo;
+}
+
+#logo-container img {
+   width: 50%;
+   padding: 20px;
+}
+
+#title {
+   display: flex;
+   background-color: var(--primary);
+   grid-area: title;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#title h2 a {
+   font-size: 2em;
+   color: white;
+}
+
+#hamburger {
+   grid-area: hamburger;
+   display: none;
+}
+
+#navigation {
+   grid-area: nav;
+}
+
+nav ul {
+   display: flex;
+
+}
+
+nav li {
+   text-align: center;
+   flex-grow: 1;
+   padding: 10px;
+
+}
+
+nav li:hover {
+   color: white;
+   background-color: var(--secondary);
+}
+
+/***********Main************/
+
+main {
+   display: grid;
+}
+
+/***Summary***/
+
+#summary {
+   margin: -150px 0 0 40px;
+   background-color: rgba(0,100,0,.9);
+   color: white;
+   width: 300px;
+   padding: 10px;
+}
+
+.weather-item {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#summary p {
+   flex-grow: 1;
+   padding: 0;
+   margin: 0;
+}
+
+/******/
+
+
+#forecast {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+#week {
+   display: flex;
+}
+
+#hero-container {
+   height: 300px;
+}
+
+
+
+/***Article****/
+
+
+#article {
+
+   text-align: left;
+   color: black;
+   text-shadow: none;
+   margin: 5%;
+   background-color: rgba(171, 216, 171, 0.658);
+   padding: 10px;
+}
+
+.article-image-container {
+   float: right;
+   margin: 10px;
+}
+
+
+/**********Gallery**********/
+
+#gallery {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="This is the assingment portal for Benjamin Smith as demanded by WDD 230 at BYUI">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/normalize.css">
+   <!-- <link rel="stylesheet" href="css/global-styles.css" /> -->
+   <link rel="stylesheet" href="css/small.css">
+   <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 601px)">
+   <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 1001px)">
+   <script src="../lesson6/js/menuToggle.js" defer></script>
+   <script src="../lesson6/js/dateFunctions.js" defer></script>
+   <script src="../lesson6/js/webfonts.js"></script>
+   <script src="../lesson6/js/getScreenSize.js" defer></script>
+   <script src="./js/lazyload.js" defer></script>
+   <title>Euphoria Weather - Preston, ID</title>
+</head>
+
+<body>
+   <header>
+      <div id='logo-container'>
+         <img src="../images/euphoriaweatherlogo.png" alt="Euphoria Weather Logo" />
+      </div>
+      <div id="title">
+         <h2>
+            <a href="./preston-4.html">Euphoria Weather</a>
+         </h2>
+         <h3>A Place to Get the Weather</h3>
+      </div>
+      <div id="navigation">
+         <div id="hamburger" onclick="menuToggle()">
+            <input type="checkbox" id="menuBox" class="menuToggleBox" />
+            <label for="menuBox">Menu</label>
+         </div>
+         <nav>
+            <ul>
+               <li>
+                  <a href="../">Home</a>
+               </li>
+               <li>
+                  <a href="./preston-6.html">Preston</a>
+               </li>
+               <li>
+                  <a href="./soda-springs.html">Soda Springs</a>
+               </li>
+               <li>
+                  <a href="./fish-haven.html">Fish Haven</a>
+               </li>
+               <li>
+                  <a href="./storm-center.html">Storm Center</a>
+               </li>
+               <li class="active">
+                  <a href="./gallery-7.html">Gallery</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <h1>Weather Gallery</h1>
+      <section id="gallery">
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/snow-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/snow2-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/sunshine-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/clouds-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/cold-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/colder-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/ligntning2-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/lightning-web-small.jpg" />
+         </picture>
+         <picture>
+            <img src="./images/placeholder.svg" alt="placeholder" data-src="./images/rain-web-small.jpg" />
+         </picture>
+      </section>     
+   </main>
+   <footer>
+      <div id="location">
+         <div>
+            <p>1928 Patrician Way</p>
+            <p>Fort Walton Beach, FL</p>
+         </div>
+         <img src="../lesson6/images/map.png" alt="Location Map" class="location-map" />
+      </div>
+      <div class="contact-info">
+         <h3>
+            Contact Information
+         </h3>
+         <span id='phone'>555-555-5555</span>
+         <span id='email'>euphoriaweather@euphoriaweather.com</span>
+      </div>
+      <div class='social-links'>
+         <a href="#"><img src="../lesson6//images/facebook.png" alt="Facebook" /></a>
+         <a href="#"><img src="../lesson6/images/instagram.png" alt="Instagram" /></a>
+         <a href="#"><img src="../lesson6/images/twitter.png" alt="Twitter" /></a>
+      </div>
+      <div>
+         <div id="year"></div>
+         <div id="modified-date"></div>
+      </div>
+   </footer>
+</body>
+
+</html>
