@@ -240,10 +240,14 @@ footer {
 #gallery {
    margin: 10%;
    display: grid;
+   grid-gap: 10%;
    grid-template-columns: 1fr;
 }
 
 #gallery img {
    width: 100%;
-   padding: 10% 0 10% 0;
+}
+
+#gallery img:hover {
+   box-shadow: 3px 2px 2px black;
 }
