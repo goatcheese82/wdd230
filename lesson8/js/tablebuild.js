@@ -1,6 +1,6 @@
 import Period from './period.js'
 
-let heads = ['Period', 'Performance', 'Goal'];
+let heads = ['Period', 'Sales', 'Sales Goal'];
 let pds = ['August', 'September', 'October', 'November', 'Black Friday', 'December'];
 let sls = [3590, 4420, 4870, 8610, 3200, 6820];
 let slgs = [4000, 5000, 5000, 7500, 3200, 7500];

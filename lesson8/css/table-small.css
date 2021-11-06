@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Ubuntu&display=swap');
+
+:root {
+   --main: #7fb9c2;
+   --hightlight: #628ca6;
+   --row: #e7f0ed;
+   --accent: #e7ffed;
+}
+html, body {
+   background-color: white;
+   font-family: 'Ubuntu', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+}
+
+.table {
+   width: 100%;
+   height: 100%;
+}
+
+table {
+   width: 100%;
+   height: inherit;
+   border-collapse: collapse;
+   background-color: var(--main);
+   border: 1px solid gray;
+}
+
+thead th:nth-child(1) {
+   background-color: var(--main);
+   font-size: 2em;
+   color: black;
+}
+
+.met {
+   background-color: var(--hightlight);
+   color: white;
+}
+
+td {
+   border: 1px solid gray;
+   margin: 0;
+   padding: 5px;
+}
+
+tr {
+   background-color: var(--row);
+}
+
+body tr:nth-child(2n) {
+   background-color: var(--accent);
+}
+
+th {
+   background-color: var(--hightlight);
+   color: white;
+   font-size: 1em;
+   border: 1px solid gray;
+   margin: 0;
+   padding: 5px;
+}
+
+tfoot {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+tfoot th {
+   color: black;
+   font-size: .6em;
+}

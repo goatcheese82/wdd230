@@ -1,68 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Qahiri&family=Ubuntu&display=swap");
 
 :root {
-   --main: #7fb9c2;
-   --hightlight: #628ca6;
-   --row: #e7f0ed;
-   --accent: #e7ffed;
+  --main: #7fb9c2;
+  --hightlight: #628ca6;
+  --row: #e7f0ed;
+  --accent: #e7ffed;
 }
-html, body {
-   background-color: white;
-   font-family: 'Ubuntu', sans-serif;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+html,
+body {
+   display: block;
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.table {
+  width: 100%;
+  height: 100%;
 }
 
 table {
-   border-collapse: collapse;
-   background-color: var(--main);
-   border: 1px solid gray;
-   box-shadow: 5px 5px 5px var(--hightlight);
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  background-color: var(--main);
+  border: 1px solid gray;
 }
 
 thead th:nth-child(1) {
-   background-color: var(--main);
-   font-size: 1.2em;
-   color: black;
+  background-color: var(--main);
+  font-size: 2em;
+  color: black;
 }
 
 .met {
-   background-color: var(--hightlight);
-   color: white;
+  background-color: var(--hightlight);
+  color: white;
 }
 
 td {
-   border: 1px solid gray;
-   margin: 0;
-   padding: 5px;
+  border: 1px solid gray;
+  margin: 0;
+  padding: 5px;
 }
 
 tr {
-   background-color: var(--row);
+  background-color: var(--row);
 }
 
 body tr:nth-child(2n) {
-   background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 th {
-   background-color: var(--hightlight);
-   color: white;
-   border: 1px solid gray;
-   margin: 0;
-   padding: 5px;
+  background-color: var(--hightlight);
+  color: white;
+  font-size: 1em;
+  border: 1px solid gray;
+  margin: 0;
+  padding: 5px;
 }
 
 tfoot {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 tfoot th {
-   color: black;
-   font-size: .6em;
+  color: black;
+  font-size: 0.6em;
+}
+
+@media screen and (min-width: 600px) {
+   body {
+      display: flex;
+   }
+
+  .table {
+     width: 400px;
+     height: 500px;
+  }
+
+  table {
+    box-shadow: 5px 5px 5px var(--hightlight);
+  }
+
+  thead th:nth-child(1) {
+   font-size: 1.2em;
+ }
 }
