@@ -1,6 +1,14 @@
+
+#storm-form {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+
 form {
    display: flex;
    flex-direction: column;
+   width: 80%;
 }
 
 .input {
@@ -11,4 +19,11 @@ form {
 
 input {
    height: 1.5em; 
+}
+
+
+.radio {
+   padding: 20px;
+   margin: 10px;
+   border: 2px solid gray;
 }

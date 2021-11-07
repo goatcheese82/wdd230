@@ -16,11 +16,9 @@
    <link rel="stylesheet" href="./css/sc-large.css" media="screen and (min-width: 1001px)">
    <link rel="stylesheet" href="./css/sc-medium.css" media="screen and (min-width: 601px) and (max-width: 1000px)">
    <link rel="stylesheet" href="./css/sc-small.css">
-   <script src="js/menuToggle.js" defer></script>
-   <script src="js/dateFunctions.js" defer></script>
-   <script src="js/forecast.js" type='module' defer></script>
-   <script src="js/webfonts.js"></script>
-   <script src="js/getScreenSize.js" defer></script>
+   <script src="../lesson6/js/menuToggle.js" defer></script>
+   <script src="../lesson6/js/dateFunctions.js" defer></script>
+   <script src="../lesson6/js/webfonts.js"></script>
    <title>Euphoria Weather - Preston, ID</title>
 </head>
 
@@ -65,7 +63,7 @@
       </div>
    </header>
    <main>
-      <section>
+      <section id="storm-form">
          <form>
             <div class="input">
                <label for="name">Full Name: </label>
@@ -111,17 +109,18 @@
                   <option selected disabled>Select Region...</option>
                </select>
             </div>
-            <div class="input">
-               <input type="radio" name="yes">
+            <div class="radio">
+               <p>Are you in danger?</p>
+               <input type="radio" name="danger-level" value="yes">
                <label for="yes">Yes</label>
-               <input type="radio" name="no">
-               <label for="yes">Yes</label>
-               <input type="radio" name="maybe">
-               <label for="yes">Yes</label>
+               <input type="radio" name="danger-level" value="no">
+               <label for="no">No</label>
+               <input type="radio" name="danger-level" value="maybe">
+               <label for="maybe">Maybe</label>
             </div>
             <div class="input">
                <label for="additional-info">Additional Info: </label>
-               <input type="text-area" name="additional-info">
+               <textarea id="additional-info" name="additional-info" rows="5"></textarea>
             </div>
             <div>
                <button type="submit">Submit</button>
