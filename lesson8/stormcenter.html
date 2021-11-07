@@ -19,6 +19,7 @@
    <script src="../lesson6/js/menuToggle.js" defer></script>
    <script src="../lesson6/js/dateFunctions.js" defer></script>
    <script src="../lesson6/js/webfonts.js"></script>
+   <script src="./js/setValue.js" defer></script>
    <title>Euphoria Weather - Preston, ID</title>
 </head>
 
@@ -63,6 +64,7 @@
       </div>
    </header>
    <main>
+      <h1>Storm Center</h1>
       <section id="storm-form">
          <form id="storms" action="thanks.html">
             <div class="input">
@@ -98,7 +100,8 @@
             </div>
             <div class="input">
                <label for="storm-severity">Storm Severity: </label>
-               <input type="range" name="storm-severity" min="0" max="10" id="storm-severity">
+               <input type="range" name="storm-severity" min="0" max="10" id="storm-severity" step="1" oninput="setValue(this.value)" onchange="setValue(this.value)">
+               <span id="storm-value">5</span>
             </div>
             <div class="input">
                <label for="storm-region">Storm Region: </label>
