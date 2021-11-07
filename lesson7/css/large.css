@@ -41,6 +41,10 @@ header {
    grid-area: nav;
 }
 
+nav {
+   display: flex;
+}
+
 nav ul {
    display: flex;
 

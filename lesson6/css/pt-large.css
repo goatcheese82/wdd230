@@ -14,6 +14,7 @@ header {
    grid-area: logo;
    border-radius: 50%;
    margin: 10%;
+   box-shadow: inset 3px 3px 10px rgb(27, 20, 20);
 }
 
 #logo-container img {
