@@ -1,3 +1,6 @@
+main {
+   text-align: center;
+}
 
 #storm-form {
    display: flex;
@@ -7,8 +10,10 @@
 
 form {
    background-color: rgba(0, 0, 0, .2);
+   text-align: left;
    display: flex;
    flex-direction: column;
+   margin: 10%;
    width: 80%;
 }
 
@@ -24,6 +29,7 @@ input {
 
 
 .radio {
+   text-align: center;
    padding: 20px;
    margin: 10px;
    border: 2px solid gray;

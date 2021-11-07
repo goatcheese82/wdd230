@@ -17,6 +17,8 @@ header {
 #logo-container {
    text-align: center;
    grid-area: logo;
+   border-radius: 50%;
+   margin: 10%;
 }
 
 #logo-container img {
