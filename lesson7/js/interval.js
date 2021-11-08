@@ -4,7 +4,7 @@ const checkStorage = () => {
    let lastVisit = (localStorage.getItem('lastVisit') != null) ? localStorage.getItem('lastVisit') : today;
    if (lastVisit != today) {
       let interval = today - lastVisit;
-      node.innerHTML = interval
+      node.innerHTML = `${interval} days since your last visit.`
    }
    else {
       node.innerHTML = "Your last visit was today!";
