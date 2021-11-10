@@ -1,0 +1,45 @@
+/**Header**/
+
+header {
+   grid-template-columns: 20% 1fr;
+}
+
+#hamburger {
+   display: none;
+}
+
+#navigation {
+   margin: 0;
+   grid-column: 1 / 3;
+   width: 100%;
+   padding: 0;
+}
+
+nav {
+   padding: 0;
+   margin: 0;
+   width: 100%;
+}
+
+nav ul {
+   padding: 10px 0;
+   margin: 0;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+
+nav li {
+   font-size: 1.5em;
+   flex-grow: 1;
+}
+
+.active {
+   list-style-type: none;
+}
+
+/**Footer**/
+
+.location-map {
+   max-width: 400px;
+}

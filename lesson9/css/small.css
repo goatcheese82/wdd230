@@ -1,0 +1,129 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;400&display=swap');
+
+:root {
+   --font-prime: 'Yaldevi';
+   --primary: #293a41;
+   --secondary: #59c134;
+   --ternary: rgb(46 113 213);
+}
+
+html body {
+   background-color: var(--ternary);
+   font-family: var(--font-prime);
+   color: white;
+   margin: 0;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+}
+
+a:hover {
+   color: var(--secondary)
+}
+
+ul {
+   text-align: left;
+   width: 60%;
+}
+
+li {
+   padding: 10px;
+   margin: 5px;
+   box-shadow: 2px 2px 4px white;
+}
+
+li:hover {
+   box-shadow: 2px 2px 4px yellow;
+}
+
+.active {
+   list-style-type: disc;
+   box-shadow: 2px 2px 4px var(--secondary);
+}
+
+
+/**Header**/
+
+header {
+   display: grid;
+   background-color: black;
+}
+
+#title {
+   text-align: center;
+}
+
+#logo-container {
+   text-align: center;
+   padding: 10%;
+}
+
+
+header img {
+   background-color: var(--ternary);
+   border: 2px solid var(--secondary);
+   border-radius: 50%;
+   box-shadow: inset 2px 2px 10px black;
+   padding: 10px;
+}
+
+/*Navigation*/
+
+#hamburger {
+   
+}
+
+#hamburger span {
+   display: block;
+   background: white;
+   width: 30px;
+   margin: 2px auto 2px auto;
+   height: 5px;
+   border-radius: 10px;
+}
+
+#navigation {
+   padding: 5%;
+   text-align: center;
+   background-color: rgba(0,0,0,.2);
+}
+
+nav {
+   display: none;
+   justify-content: center;
+}
+
+input {
+   display: none;
+}
+
+
+/**Footer**/
+
+footer {
+   display: flex;
+   flex-direction: column;
+   background-color: black;
+   text-align: center;
+   align-items: center;
+}
+
+footer > div {
+   width: 80%;
+}
+
+.location-map {
+   width: 100%;
+   border: 2px solid var(--secondary)
+}
+
+.social-links {
+   padding: 5px 0 5px 0;
+}
+
+.social-links img {
+   width: 30px;
+}
