@@ -1,7 +1,7 @@
 import styles from './style.js';
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 const mqls = [
-   window.matchMedia("(max-width: 800px)"),
+   window.matchMedia("(max-width: 600px)"),
    window.matchMedia("(max-width: 1099px")
 ]
 

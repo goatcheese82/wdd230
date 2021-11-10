@@ -17,7 +17,8 @@ const styles = {
       },
       image: {
          boxShadow: '0px 0px 8px black',
-         width: '60%'
+         width: '60%',
+         margin: '10px',
       },
    },
 
