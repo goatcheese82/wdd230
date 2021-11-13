@@ -4,8 +4,13 @@ header {
    grid-template-columns: 20% 1fr;
 }
 
+#title {
+   text-align: left;
+   margin-left: 20%;
+}
+
 #hamburger {
-   display: none;
+   margin: 20px;
 }
 
 #navigation {
@@ -36,6 +41,13 @@ nav li {
 
 .active {
    list-style-type: none;
+}
+
+/**Towns**/
+
+.town {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
 }
 
 /**Footer**/
