@@ -68,6 +68,10 @@ header {
    margin: 20px;
 }
 
+#title h2 a {
+   color: var(--secondary);
+}
+
 #logo-container {
    text-align: center;
    padding: 10%;
@@ -113,6 +117,16 @@ input {
    display: none;
 }
 
+
+/**Hero**/
+
+#hero-container {
+   width: 100%;
+}
+
+#hero-image {
+   width: 100%;
+}
 
 /**Footer**/
 
@@ -179,3 +193,21 @@ main {
    margin: 10px;
    padding: 10px;
 }
+
+#forecast {
+   margin: 10%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+#week {
+   display: grid;
+   gap: 2px;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.day {
+   background-color: rgba(0,0,0,.2);
+}
+
