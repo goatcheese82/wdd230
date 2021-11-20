@@ -1,0 +1,32 @@
+header {
+   background: linear-gradient(black, transparent);
+   box-shadow: 0 0 10px black;
+}
+
+#title {
+   background-color: transparent;
+   text-align: left;
+   font-size: 2em;
+}
+
+#hamburger {
+   display: none;
+}
+
+#towns {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.town {
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   text-align: center;
+}
+
+
+nav {
+   background-color: transparent;
+   display: flex;
+}
