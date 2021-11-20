@@ -8,13 +8,10 @@ export const printObject = (obj, node) => {
 }
 
 export const getDusk = (weather) => {
-   let days = []
-    weather.list.forEach(day => {
-       if (day.dt_txt.includes('18:00:00')) {
-          days.push(day);
-       }
-   });
-   return days;
+   const checkTime = (ent) => {
+      return ent.dt_txt.includes('18:00:00');
+   }
+   return weather.list.filter(checkTime);
 }
 
 export const calculateChill = (temp, speed) => {
