@@ -1,4 +1,11 @@
+html {
+   font-size: 1em;
+}
+
+
 /**Header**/
+
+
 
 header {
    grid-template-columns: 20% 1fr;
@@ -54,4 +61,12 @@ nav li {
 
 .location-map {
    max-width: 400px;
+}
+
+#article {
+   padding: 0 5%;
+}
+
+#forecast {
+   margin: 5%;
 }
