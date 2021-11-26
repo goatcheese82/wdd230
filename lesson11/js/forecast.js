@@ -6,7 +6,6 @@ export default class Forecast {
    }
 
    printSelf = node => {
-      console.log(this.forecast)
       this.forecast.forEach((day, index) => {
          let subNode = document.getElementById(`day${index + 1}`)
          printDay(day, subNode)

@@ -1,4 +1,3 @@
-
 export const camelConvert = s => {
    return s.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase());
 }
@@ -24,6 +23,13 @@ export const calculateChill = (temp, speed) => {
    }
 }
 
+export const getTown = () => {
+   const title = window.location.pathname.split("/").pop().split(".").shift().split("-").map(word => {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+   }).join(' ');
+   return title;
+}
+
 export const printDay = (day, node) => {
    const days = [
       "Sun",
@@ -44,4 +50,9 @@ export const printDay = (day, node) => {
    let temp = document.createElement('p');
    temp.innerHTML = `${day.main.temp}&#176;F`;
    node.append(weekDay, icon, temp);
+}
+
+export const printTitle = (town) => {
+   let node = document.getElementById('town-name');
+   node.innerHTML = town;
 }

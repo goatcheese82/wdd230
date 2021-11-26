@@ -118,17 +118,6 @@ input {
    display: none;
 }
 
-
-/**Hero**/
-
-#hero-container {
-   width: 100%;
-}
-
-#hero-image {
-   width: 100%;
-}
-
 /**Footer**/
 
 footer {
@@ -156,10 +145,66 @@ footer > div {
    width: 30px;
 }
 
+/*********Main************/
+
 main {
    width: 100%;
    text-align: center;
 }
+
+
+/**Hero**/
+
+#banner {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+#hero-pic {
+   width: 100%;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+#hero-image {
+   width: 100%;
+}
+
+
+/******* WEATHER ******/
+
+#summary {
+   grid-column-start: 1;
+   grid-row-start: 1;
+   grid-column-end: 2;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(0,0,0,.8);
+   margin: 10% auto 10% 10%;
+   text-align: center;
+   padding: 10px;
+   box-shadow: 2px 2px 5px black;
+}
+
+#summary h2 {
+   margin: 0 0 20px 0;
+}
+
+#summary-items {
+   display: grid;
+   text-align: left;
+   grid-template-columns: 1fr 1fr;
+}
+
+#summary-items p {
+   margin: 0 20px 0 20px;
+}
+
+
+
+/**Towns**/
 
 #towns {
    margin: 10%;
@@ -211,34 +256,15 @@ main {
 
 .day {
    background-color: rgba(0,0,0,.2);
+   border: 1px solid black;
 }
 
 
 
-/******* WEATHER ******/
+/********Article***********/
 
-#summary {
-   display: flex;
-   flex-direction: column;
-   background-color: rgba(0,0,0,.2);
-   margin: 4% auto;
-   text-align: center;
-   width: 60%;
-   padding: 10px;
-}
-
-#summary h2 {
-   margin: 0 0 20px 0;
-}
-
-#summary-items {
-   display: grid;
-   text-align: left;
-   grid-template-columns: 1fr 1fr;
-}
-
-#summary-items p {
-   margin: 0 20px 0 20px;
+.article-text {
+   padding: 10%;
 }
 
 

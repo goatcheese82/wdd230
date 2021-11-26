@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="description" content="This is the assingment portal for Benjamin Smith as demanded by WDD 230 at BYUI">
+   <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/small.css">
    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 600px)">
@@ -12,7 +12,8 @@
    <script src="js/menuToggle.js" defer></script>
    <script src="js/dateFunctions.js" defer></script>
    <script src="js/weatherapi.js" type="module" defer></script>
-   <title>Euphoria Weather - Home</title>
+   <script src="js/index.js" type="module" defer></script>
+   <title>Euphoria Weather - Preston, ID</title>
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                   </a>
                </li>
                <li class="active">
-                  <a href="./preston-6.html">
+                  <a href="./preston.html">
                      Preston
                   </a>
                </li>
@@ -64,30 +65,31 @@
       </div>
    </header>
    <main>
+      <h2 id="town-name"></h2>
       <section id="banner">
          <picture id="hero-pic">
-            <source media="(min-width:600px) and (max-width: 1000px" srcset="./../images/wdd230_image_franklinMed.png">
-            <source media="(min-width:1001px)" srcset="./../images/wdd230_image_franklinOriginal.svg">
-            <img src="./../images/wdd230_image_franklinSmall.png" alt="Hero Image" id="hero-image" />
+            <source media="(min-width:600px) and (max-width: 1000px" srcset="./images/preston-web-medium.jpg">
+            <source media="(min-width:1001px)" srcset="./images/preston.jpg">
+            <img src="./images/preston-web-small.jpg" alt="Hero Image" id="hero-image" />
          </picture>
-      </section>
-      <section id="summary">
-         <h2>Weather Summary</h2>
-         <div id='summary-items'>
+         <div id="summary">
+            <h2>Weather Summary</h2>
+            <div id='summary-items'>
+            </div>
          </div>
       </section>
       <section id="forecast">
          <h2>Five Day Forecast</h2>
          <div id="week">
-            <div id="day1">
+            <div id="day1" class="day">
             </div>
-            <div id="day2">
+            <div id="day2" class="day">
             </div>
-            <div id="day3">
+            <div id="day3" class="day">
             </div>
-            <div id="day4">
+            <div id="day4" class="day">
             </div>
-            <div id="day5">
+            <div id="day5" class="day">
             </div>
          </div>
       </section>

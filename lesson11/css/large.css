@@ -30,3 +30,19 @@ nav {
    background-color: transparent;
    display: flex;
 }
+
+
+/******Main*****/
+
+#banner {
+   height: 20%;
+}
+
+#hero-pic {
+   overflow: hidden;
+   height: 100%;
+}
+
+#hero-image {
+   height: 100%;
+}

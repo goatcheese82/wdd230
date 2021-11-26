@@ -1,3 +1,4 @@
+const cities = [{'title': 'Preston', 'id': '5604473'}, {'title': 'Fish Haven', 'id': '5585010'}, {'title': 'Soda Springs', 'id': '5607916'}]
 class Town {
    constructor(town) {
       this.name = town.name;
@@ -8,6 +9,7 @@ class Town {
       this.avgRain = town.averageRainfall;
       this.events = town.events;
       this.image = town.image;
+      this.id = cities.find(x => x.title === town.name).id;
    };
 
    printSelf = (node) => {

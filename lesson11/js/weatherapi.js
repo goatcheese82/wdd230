@@ -1,5 +1,7 @@
 import WeatherSummary from './weatherSummary.js';
 import Forecast from './forecast.js';
+import { town } from './index.js';
+
 
 const FORECAST_URL = new URL('https://api.openweathermap.org/data/2.5/forecast');
 const SUMMARY_URL = new URL('https://api.openweathermap.org/data/2.5/weather');
@@ -8,7 +10,7 @@ const CITY_KEY = '5604473';
 let params = {
    'appid': API_KEY,
    'units': 'imperial',
-   'id': CITY_KEY
+   'id': town.id
 };
 
 
