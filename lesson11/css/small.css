@@ -129,6 +129,26 @@ footer > div {
    width: 80%;
 }
 
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   margin: 2%;
+}
+
+.contact-info span {
+   margin: 4%;
+}
+
+.info-block {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#location img {
+   margin: 10px;
+}
+
 .location-map {
    width: 100%;
    border: 2px solid var(--secondary)
@@ -140,6 +160,7 @@ footer > div {
 
 .social-links img {
    width: 30px;
+   margin: 15px;
 }
 
 /*********Main************/
