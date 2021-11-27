@@ -177,6 +177,7 @@ main {
 #banner {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   box-shadow: 2px 2px 5px black;
 }
 
 #hero-pic {
