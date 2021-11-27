@@ -47,6 +47,21 @@ nav {
    height: 100%;
 }
 
+
+/**Article**/
+
+#article {
+   width: 70%;
+}
+
+
+/*****Events  ************************************/
+
+#events {
+   width: 60%;
+   font-size: 1.6em;
+}
+
 /********Storm Center**********/
 
 #storm-form {
@@ -86,8 +101,10 @@ input {
    grid-template-columns: 1fr 1fr 1fr;
 }
 
+#gallery div {
+   background-color: rgba(0, 0, 0, .2);
+}
 
-
-#gallery img:hover {
-   box-shadow: 3px 2px 2px black;
+#gallery div:hover {
+   box-shadow: 2px 2px 5px black;
 }

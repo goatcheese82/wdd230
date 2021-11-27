@@ -44,7 +44,7 @@ export const printDay = (day, node) => {
    let weekDay = document.createElement('h3');
    weekDay.innerHTML = days[d.getDay()];
    let icon = document.createElement('img');
-   let iconSource = `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
+   let iconSource = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`
    icon.setAttribute('src', iconSource);
    icon.setAttribute('alt', day.weather[0].description);
    let temp = document.createElement('p');
