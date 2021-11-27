@@ -78,3 +78,16 @@ input {
    margin: 10px;
    border: 2px solid gray;
 }
+
+/**********Gallery**********/
+
+#gallery {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#gallery img:hover {
+   box-shadow: 3px 2px 2px black;
+}

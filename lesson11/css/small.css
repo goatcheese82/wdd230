@@ -23,6 +23,7 @@ body {
    margin: 0;
    display: grid;
    grid-template-rows: auto 1fr auto;
+   grid-auto-rows: 1fr minmax(0, 1fr) 1fr;
 }
 
 a {
@@ -148,6 +149,8 @@ footer > div {
 /*********Main************/
 
 main {
+   display: flex;
+   flex-direction: column;
    width: 100%;
    text-align: center;
 }
@@ -301,4 +304,24 @@ input {
    padding: 20px;
    margin: 10px;
    border: 2px solid gray;
+}
+
+
+/*******************Gallery**************/
+
+#gallery {
+   margin: 10%;
+   display: grid;
+   grid-gap: 10%;
+   grid-auto-rows: minmax(0, 1fr);
+}
+
+#gallery img {
+   width: 100%;
+   filter: blur(0em);
+   transition: filter 0.5s;
+}
+
+#gallery img[data-src] {
+   filter: blur(0.2em);
 }
