@@ -114,7 +114,7 @@ nav {
    justify-content: center;
 }
 
-input {
+#hamburger input {
    display: none;
 }
 
@@ -268,3 +268,37 @@ main {
 }
 
 
+/**************Storm Center*********/
+
+#storm-form {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+
+form {
+   background-color: rgba(0, 0, 0, .2);
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   margin: 10%;
+   width: 80%;
+}
+
+.input {
+   display: grid;
+   grid-template-columns: 20% 80%;
+   padding: 10px;
+}
+
+input {
+   height: 1.5em; 
+}
+
+
+.radio {
+   text-align: center;
+   padding: 20px;
+   margin: 10px;
+   border: 2px solid gray;
+}
