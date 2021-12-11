@@ -1,6 +1,3 @@
-import Header from './components/header.js';
+import { setMedia } from './checkMedia.js';
 
-// const headerNode = document.querySelector("header");
-const header = new Header(document.querySelector("header"));
-
-header.build();
+setMedia();

@@ -1,0 +1,74 @@
+header {
+    height: 225px;
+}
+
+#nav-links {
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-item {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 0 0 25% 0;
+}
+
+#logo img {
+    height: 200px;
+    margin-top: 50px;
+}
+
+footer {
+    bottom: 0px;
+    display: grid;
+    grid-template-areas: "title title title"
+                         "logo contact credit"
+                         "logo social credit";
+}
+
+footer h3 {
+    grid-area: title;
+}
+
+#contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: contact;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+
+#contact-info div p{
+    text-align: right;
+}
+
+#contact-info p {
+    text-align: left;
+}
+
+#contact-info p:last-child {
+    text-align: right;
+}
+
+
+#footer-logo {
+    grid-area: logo;
+    margin: auto;
+}
+
+#social-links {
+    grid-area: social;
+    text-align: center;
+}
+
+#social-links img {
+    width: 50px;
+    padding: 0 15px 0 15px;
+}

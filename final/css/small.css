@@ -1,13 +1,106 @@
+:root {
+    --primary: #003446;
+    --secondary: #c4c4c4;
+}
+
 /******* Main *********/
 
-html {
-    background-color: #003446;
+html, body {
+    background-color: var(--secondary);
+    margin: 0;
+    height: 100%;
 }
 
 body {
-    background-color: #fcfcf4;
+    display: grid;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+    grid-template-rows: auto auto auto;
 }
 
 
 /******* Small ***********/
 
+header {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    position: relative;
+    background-color: var(--primary);
+    justify-content: center;
+    align-items: cetner;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+}
+
+#nav-links {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+}
+
+#burger {
+    background-color: transparent;
+}
+
+.nav-item {
+    background-color: var(--primary);
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#logo {
+    position: absolute;
+}
+
+#logo img {
+    height: 130px;
+    margin-top: 20px;
+}
+
+#account-links {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 0 0 auto;
+    width: 100%;
+}
+
+#account-links img {
+    width: 30px;
+}
+
+
+#dayton-image {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    height: 30%;
+    bottom: 0px;
+    width: 100%;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#footer-logo img{
+    width: 100px;
+}
+
+#social-links {
+    margin: 40px;
+}
+
+#social-links img {
+    width: 40px;
+    padding: 0 15px 0 15px;
+}

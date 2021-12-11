@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="426.39044"
+   viewBox="0 0 799.99999 426.39043"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.65520833"
+     inkscape:cx="-183.91097"
+     inkscape:cy="151.09698"
+     inkscape:window-width="3840"
+     inkscape:window-height="2091"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient46466"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop46464" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-556.77216,-348.07614)">
+    <path
+       sodipodi:type="star"
+       id="path45487"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="925.09082"
+       sodipodi:cy="697.34143"
+       sodipodi:r1="735.74811"
+       sodipodi:r2="367.87408"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.52359878"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 925.09084,-38.406677 318.58826,551.811067 318.5883,551.81111 -637.17658,0 -637.17656,0 318.58826,-551.81111 z"
+       inkscape:transform-center-y="-71.065069"
+       transform="matrix(0.17373492,0,0,0.38635545,597.99183,362.91477)"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.14715;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-556.77216,-348.07614)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:214.716px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.460105;stroke-opacity:1"
+       x="536.82581"
+       y="616.90045"
+       id="text4851"><tspan
+         sodipodi:role="line"
+         id="tspan4849"
+         x="536.82581"
+         y="616.90045"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:214.716px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.460105;stroke-opacity:1">DAYTON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:47.9929px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.359947;stroke-opacity:1"
+       x="1112.2084"
+       y="544.3645"
+       id="text33511"
+       transform="scale(0.78076893,1.2807887)"><tspan
+         sodipodi:role="line"
+         id="tspan33509"
+         x="1112.2084"
+         y="544.3645"
+         style="font-size:47.9929px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.359947;stroke-opacity:1">Area Chamber of Commerce</tspan></text>
+    <rect
+       id="rect45379"
+       width="800"
+       height="4.8877382"
+       x="556.77216"
+       y="637.95837"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.252351" />
+  </g>
+</svg>
