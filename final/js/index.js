@@ -1,3 +1,4 @@
-import { setMedia } from './checkMedia.js';
+import { setMedia, mqls } from './checkMedia.js';
 
 setMedia();
+

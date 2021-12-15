@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 1100px)">
     <script src="./js/index.js" type="module"></script>
     <script src="./js/elements/burger.js" defer></script>
+    <script src="./js/weatherapi.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -26,6 +27,8 @@
       <div id="account-links"><img src="./images/common/user.svg"></div>
     </header>
     <main>
+      <section id="weather">
+      </section>
       <picture id="dayton-image">
           <source media="(min-width:600px) and (max-width: 1000px)" srcset="./images/medium/dayton-ohio-medium.svg">
           <source media="(min-width:1001px)" srcset="./images/large/dayton-ohio-large.svg">
@@ -33,6 +36,7 @@
       </picture>
       <section id="call">
           <h2>Become a Member</h2>
+          <p></p>
       </section>
       <section id="mission">
           <h2>
@@ -44,8 +48,7 @@
       </section>
       <section id="ads"></section>
       <section id="events"></section>
-    </main>
-    <footer>
+      <footer>
         <h3>Dayton Area Chamber of Commerce</h3>
         <div id="contact-info">
             <p>Address:</p>
@@ -66,5 +69,6 @@
             <a href='https://www.linkedin.com/company/daytonchamber/'><img src="./images/common/linkedin.png"></a>
         </div>
     </footer>
+    </main>
   </body>
 </html>
