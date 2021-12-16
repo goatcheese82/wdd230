@@ -104,3 +104,15 @@ form input {
     height: 2em;
 }
 
+.contact-info {
+}
+
+.contact-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px dotted black;
+    line-height: .5em;
+}
+
+.contact-info p {
+}

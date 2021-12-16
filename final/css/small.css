@@ -307,3 +307,15 @@ form {
 #city img {
     margin: 10% auto 0 auto;
 }
+
+/***Contact Us */
+
+#contact-us {
+    margin: 10% auto;
+    text-align: center;
+    width: 90%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding: 10px;
+
+}
