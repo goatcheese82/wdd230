@@ -15,7 +15,7 @@ export default class Forecast {
                 let subNode = document.createElement('div');
                 subNode.className = 'forecast-card';
                 let temp = document.createElement('p');
-                temp.innerHTML = Math.round(day.temp.day);
+                temp.innerHTML = `${Math.round(day.temp.day)}&#176;F`;
                 let icon = document.createElement('img');
                 let iconSource = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`;
                 icon.setAttribute('src', iconSource);
