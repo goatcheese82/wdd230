@@ -8,12 +8,13 @@
       content="Dayton, Ohio area chamber of commerce is dedicated to serving our members and our community while promoting a healthy business environment."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>City of Dayton Chamber of Commerce</title>
+    <title>City of Dayton Chamber of Commerce: Join Us</title>
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 1100px)">
     <script src="./js/index.js" type="module"></script>
     <script src="./js/elements/burger.js" defer></script>
+    <script src="./js/weatherapi.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -25,46 +26,59 @@
       </picture>
       <div id="account-links"><img src="./images/common/user.svg"></div>
     </header>
-    <main>
-      <picture id="dayton-image">
-          <source media="(min-width:600px) and (max-width: 1000px)" srcset="./images/medium/dayton-ohio-medium.svg">
-          <source media="(min-width:1001px)" srcset="./images/large/dayton-ohio-large.svg">
-          <img src="./images/small/dayton-ohio-small.svg" alt="Dayton Ohio Downtown" id="dayton-image" />
-      </picture>
-      <section id="call">
-          <h2>Become a Member</h2>
-      </section>
-      <section id="mission">
-          <h2>
-              Our Mission
-          </h2>
-          <p>
+    <main id="join">
+      <h1>Join Dayton Area Chamber of Commerce</h1>
+      <section id="desc">
 
-          </p>
       </section>
-      <section id="ads"></section>
-      <section id="events"></section>
+      <section>
+        <form>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" required>
+          <label for="biz-name">Business Name:</label>
+          <input type="text" id="biz-name" name="biz-name" required>
+          <label for="biz-address">Business Address:</label>
+          <input type="text" id="biz-address" name="biz-address" required>
+          <label for="biz-website">Business Website:</label>
+          <input type="text" id="biz-web" name="biz-website">
+          <label for="biz-desc">Business Description:</label>
+          <textarea maxlength="144" placeholder="144 Character Maximum" rows="3" id="biz-desc" name="biz-desc"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+
+      </section>
     </main>
     <footer>
-        <h3>Dayton Area Chamber of Commerce</h3>
-        <div id="contact-info">
-            <p>Address:</p>
-            <div id="address">
-                <p>8 N. Main Street</p>
-                <p>Suite 100</p>
-                <p>Dayton, Oh 45402-1904</p>
-            </div>
-            <p>Phone:</p>
-            <p>973.226.1444</p>
-        </div>
-        <picture id="footer-logo">
-            <img src="./images/small/logo-small.svg" alt="Dayton Chamber of Commerce Logo" id="dayton-logo" />                
-        </picture>
-        <div id="social-links">
-            <a href='https://www.facebook.com/DaytonChamber'><img src="./images/common/facebook.png"></a>
-            <a href='https://www.instagram.com/explore/locations/182194752/dayton-area-chamber-of-commerce/'><img src="./images/common/instagram.png"></a>
-            <a href='https://www.linkedin.com/company/daytonchamber/'><img src="./images/common/linkedin.png"></a>
-        </div>
-    </footer>
+      <h3>Dayton Area Chamber of Commerce</h3>
+      <div id="contact-info">
+          <p>Address:</p>
+          <div id="address">
+              <p>8 N. Main Street</p>
+              <p>Suite 100</p>
+              <p>Dayton, Oh 45402-1904</p>
+          </div>
+          <p>Phone:</p>
+          <p>973.226.1444</p>
+      </div>
+      <picture id="footer-logo">
+          <img src="./images/small/logo-small.svg" alt="Dayton Chamber of Commerce Logo" id="dayton-logo" />                
+      </picture>
+      <picture id="footer-seal">
+        <img src="./images/large/footer-accredited.jpg" alt="US Chamber of Commerce Accredited" id="accredit" />                
+    </picture>
+      <div id="social-links">
+          <a href='https://www.facebook.com/DaytonChamber'><img src="./images/common/facebook.png"></a>
+          <a href='https://www.instagram.com/explore/locations/182194752/dayton-area-chamber-of-commerce/'><img src="./images/common/instagram.png"></a>
+          <a href='https://www.linkedin.com/company/daytonchamber/'><img src="./images/common/linkedin.png"></a>
+      </div>
+  </footer>
   </body>
 </html>

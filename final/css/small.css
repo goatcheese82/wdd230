@@ -28,6 +28,7 @@ header {
 
 nav {
     z-index: 999;
+    font-size: 1.4em;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,9 +36,12 @@ nav {
 }
 
 #nav-links {
+    width: 200px;
+    margin-top: 1em;
     position: absolute;
     display: none;
     flex-direction: column;
+    box-shadow: 8px 10px 15px black;
 }
 
 #burger {
@@ -47,7 +51,7 @@ nav {
 .nav-item {
     background-color: var(--primary);
     color: white;
-    padding: 5px;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -78,9 +82,6 @@ nav {
 }
 
 footer {
-    position: fixed;
-    height: 30%;
-    bottom: 0px;
     width: 100%;
     grid-area: footer;
     background-color: black;
@@ -154,3 +155,73 @@ main {
     #call {
         grid-area: call;
     }
+
+    #mission {
+        grid-area: mission;
+    }
+
+    #ads {
+        grid-area: ad;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+        background-color:rgba(0, 0, 0, .6);
+        color: white;
+        height: 530px;
+    }
+
+    #ads > div {
+        margin: 10px;
+        max-width: 300px;
+        height: 100%;
+    }
+    
+
+    #ads img {
+        margin: auto;
+        width: 100%;
+    }
+
+    #ads a {
+        text-decoration: none;
+    }
+
+    #ads a:visited {
+        color: white;
+    }
+
+    .next, .prev {
+        cursor: pointer;
+        text-align: center;
+        line-height: 2em;
+        width: 30px;
+        height: 30px;
+        background-color: seagreen;
+        border-radius: 50%;
+    }
+    #events {
+        grid-area: events;
+    }
+
+    .ads-nav {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .ads-nav div:nth-child(2) {
+        justify-self: right;
+    }
+
+
+
+/***Join***/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
