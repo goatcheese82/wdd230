@@ -10,7 +10,6 @@ const cycleAds = () => {
         current = 1;
     }
     else current++;
-    console.log(current);
     setAd();
 }
 

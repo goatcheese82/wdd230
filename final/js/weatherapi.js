@@ -31,6 +31,3 @@ const currentWeather = new WeatherSummary(weather);
 const forecast = currentWeather.daily;
 
 currentWeather.printSelf(document.getElementById('weather'))
-
-
-console.log(weather);

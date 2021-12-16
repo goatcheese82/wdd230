@@ -17,7 +17,7 @@ switch (page) {
         printEvents(eventNode);
         break;
     case 'directory':
-        node = document.getElementById('dir');
+        let node = document.getElementById('dir');
         buildDirectory(node);
         break;
     default:
