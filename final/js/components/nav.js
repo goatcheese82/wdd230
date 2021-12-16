@@ -10,9 +10,13 @@ export default class Nav {
         let subdiv = document.createElement('div');
         subdiv.id = 'nav-links';
         let hamburger = document.createElement('div');
-        hamburger.append('Hello')
         hamburger.id = 'burger';
+        let icon = document.createElement('img');
+        hamburger.append(icon);
         hamburger.setAttribute('onclick', 'displayBurger()')
+        icon.setAttribute('src', './images/common/burger.svg')
+        icon.setAttribute('alt', 'Hamburger Menu Icon')
+        icon.id = 'burger-icon';
         while(div.firstChild) {div.removeChild(div.firstChild)};
         size == 'small' ? div.append(hamburger) : null;
         this.makeNav(subdiv);
