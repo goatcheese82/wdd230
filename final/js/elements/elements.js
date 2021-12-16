@@ -31,3 +31,13 @@ export const events = [
     {'title': 'Government Affairs Breakfast', 'date': 'Tue January 11'},
     {'title': 'Leadership Dayton Class of 2023', 'date': 'Thu January 20'}
 ]
+
+export const days = [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat"
+ ]

@@ -43,3 +43,9 @@ header {
     line-height: 1em;
 }
 
+.weather-forecast {
+    display: flex;
+    color: white;
+    margin: 10px;
+    padding: 40px;
+}

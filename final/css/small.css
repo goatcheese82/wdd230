@@ -17,6 +17,10 @@ body {
     min-height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /******* Small ***********/
 
@@ -40,7 +44,7 @@ nav {
 
 #nav-links {
     width: 200px;
-    margin-top: 1em;
+    margin-top: 1.5em;
     position: absolute;
     display: none;
     flex-direction: column;
@@ -49,6 +53,7 @@ nav {
 
 #burger {
     background-color: transparent;
+    margin: 0 0 0 10px;
 }
 
 .nav-item {
@@ -66,13 +71,6 @@ nav {
 #logo img {
     height: 130px;
     margin-top: 20px;
-}
-
-#account-links {
-    display: flex;
-    justify-content: flex-end;
-    margin: auto 0 0 auto;
-    width: 100%;
 }
 
 #account-links img {
@@ -380,4 +378,14 @@ button {
     color: white;
     margin: 10%;
     padding: 10%;
+}
+
+.weather-forecast {
+    display: none;
+    color: white;
+    margin: 10px;
+}
+
+.forecast-card {
+    text-align: center;
 }

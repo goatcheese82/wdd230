@@ -1,3 +1,4 @@
+import Forecast from "./components/forecast.js";
 import WeatherSummary from "./components/weatherSummary.js";
 
 const WEATHER_URL = new URL('https://api.openweathermap.org/data/2.5/onecall');
@@ -28,6 +29,8 @@ const weather = await getWeather(WEATHER_URL);
 
 const currentWeather = new WeatherSummary(weather);
 
-const forecast = currentWeather.daily;
+const forecast = new Forecast(weather.daily);
+
+forecast.buildForecast(document.getElementById('account-links'));
 
 currentWeather.printSelf(document.getElementById('weather'))
