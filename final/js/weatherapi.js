@@ -28,6 +28,8 @@ const weather = await getWeather(WEATHER_URL);
 
 const currentWeather = new WeatherSummary(weather);
 
+const forecast = currentWeather.daily;
+
 currentWeather.printSelf(document.getElementById('weather'))
 
 

@@ -32,7 +32,7 @@
 
       </section>
       <section>
-        <form>
+        <form action="confirm.html">
           <label for="fname">First name:</label>
           <input type="text" id="fname" name="fname" required>
           <label for="lname">Last name:</label>
@@ -51,6 +51,15 @@
           <input type="text" id="biz-web" name="biz-website">
           <label for="biz-desc">Business Description:</label>
           <textarea maxlength="144" placeholder="144 Character Maximum" rows="3" id="biz-desc" name="biz-desc"></textarea>
+          <div class="radio">
+            <p>Are you in danger?</p>
+            <input type="radio" name="member-level" value="Non-Profit">
+            <label for="yes">Yes</label>
+            <input type="radio" name="member-level" value="Bronze">
+            <label for="no">No</label>
+            <input type="radio" name="member-level" value="Silver">
+            <label for="maybe">Maybe</label>
+         </div>
           <button type="submit">Submit</button>
         </form>
 

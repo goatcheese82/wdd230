@@ -85,9 +85,11 @@ export const buildAds = node => {
         website.innerHTML = c.website;
         website.setAttribute('href', c.website);
         subNode.append(title, image, phone, website, address, city, desc, buttons);
+        if (index < 3 ) {
         node.append(subNode)
         rightButton.addEventListener('click', cycleAds);
         leftButton.addEventListener('click', reversCycle)
+        }
     })
     setAd();
 }
