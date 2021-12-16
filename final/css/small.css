@@ -340,3 +340,36 @@ button {
     width: 100%;
     text-align: center;
 }
+
+
+#desc {
+    background-color: rgba(0, 0, 0, .6);
+    padding: 10px;
+    color: white;
+    display: grid;
+    margin: 30px auto;
+    line-height: 2pt;
+}
+
+#desc > p {
+    line-height: 1em;
+}
+
+#desc ul {
+    text-align: left;
+    line-height: 1em;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.membership-desc {
+    background-color: var(--primary);
+    padding: 10px;
+    margin: 10px auto;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+    width: 90%;
+}

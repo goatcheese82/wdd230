@@ -29,3 +29,17 @@ header {
     width: 100%;
     margin: auto;
 }
+
+#desc {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#desc h3 {
+    grid-column: 1 / 5;
+}
+
+#desc > p {
+    grid-column: 1 / 5;
+    line-height: 1em;
+}
+
