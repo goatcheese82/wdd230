@@ -114,5 +114,7 @@ form input {
     line-height: .5em;
 }
 
-.contact-info p {
+
+#board-of-directors {
+    grid-template-columns: 1fr 1fr 1fr;
 }

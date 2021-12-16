@@ -333,3 +333,10 @@ button {
     max-width: 200px;
     margin: auto;
 }
+
+#board-of-directors {
+    margin: auto;
+    display: grid;
+    width: 100%;
+    text-align: center;
+}
