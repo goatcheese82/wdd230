@@ -317,5 +317,19 @@ form {
     background-color: rgba(0, 0, 0, .6);
     color: white;
     padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}
 
+.contact-map {
+    margin: 30px;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+button {
+    height: 3em;
+    max-width: 200px;
+    margin: auto;
 }
