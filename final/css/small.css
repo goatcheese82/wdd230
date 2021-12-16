@@ -216,8 +216,22 @@ footer {
         background-color: seagreen;
         border-radius: 50%;
     }
+    
     #events {
         grid-area: events;
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto;
+        background-color: rgba(0, 0, 0, .6);
+        color: white;
+        padding: 5%;
+        border: 2px solid seagreen;
+    }
+
+    .event {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .ads-nav {
@@ -231,6 +245,10 @@ footer {
     .ads-nav div:nth-child(2) {
         justify-self: right;
     }
+
+
+
+    .event
 
 
 
@@ -272,4 +290,19 @@ form {
 
 #grid-icon {
     cursor: pointer;
+}
+
+/***city***/
+
+#about {
+    margin: 10% 5% 10% 5%;
+    text-align: left;
+}
+
+#city {
+    text-align: center;
+}
+
+#city img {
+    margin: 10% auto 0 auto;
 }

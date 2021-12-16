@@ -22,6 +22,12 @@ export const companies = [
 
 const dates = [new Date(2021, 12, 16), new Date(2022, 1, 11)]
 
+// export const events = [
+//     {'title': 'Hybrid: Safety', 'description': '', 'day': '', 'month': '', 'year': '', 'start': '', 'end': ''}
+// ]
+
 export const events = [
-    {'title': '', 'description': '', 'day': '', 'month': '', 'year': '', 'start': '', 'end': ''}
+    {'title': 'Safety Breakfast with the Experts', 'date': 'Tue Jan 4'},
+    {'title': 'Government Affairs Breakfast', 'date': 'Tue January 11'},
+    {'title': 'Leadership Dayton Class of 2023', 'date': 'Thu January 20'}
 ]
