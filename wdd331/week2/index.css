@@ -1,0 +1,10 @@
+.help::before {
+    content: '( ';
+}
+.help::after {
+    content: ')';
+}
+
+fieldset p:nth-child(n+3) {
+    display: none;
+}

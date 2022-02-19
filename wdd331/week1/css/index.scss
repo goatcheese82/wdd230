@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+$header-font: "Lora", serif;
+$primary: #6495ed;
+$primary-text: #faebd7;
+$secondary-text: #deb887;
+
+@mixin center {
+  margin: 10% auto 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header-font;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $primary-text;
+}
+
+body {
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+a {
+  color: $primary-text;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: $secondary-text;
+  }
+}
+
+main {
+  background-color: $primary-text;
+}
+
+/***Header***/
+
+header {
+  background-color: $primary;
+  text-align: right;
+  padding: 20px;
+}
+
+/***Nav***/
+
+nav {
+  color: $primary-text;
+  text-decoration: none;
+  a {
+    &:visited {
+      color: $primary-text;
+      text-decoration: none;
+    }
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  li {
+    list-style: none;
+    margin: 10px 0 10px 0;
+  }
+}
+
+nav {
+  li {
+    list-style: none;
+    margin: 10px 0 10px 0;
+  }
+}
+
+/***Article***/
+
+article {
+  a {
+    color: black;
+    text-decoration: none;
+    &:visited {
+      color: black;
+      text-decoration: none;
+    }
+    &:active {
+      color: $secondary-text;
+    }
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+  background-color: white;
+  margin: 10%;
+  box-shadow: 3px 3px 8px gray;
+  img {
+    width: 80%;
+  }
+  p {
+    padding: 5%;
+  }
+}
+
+.post-content {
+  margin: 0 10%;
+}
+
+figure {
+  @include center;
+}
+
+article {
+  img {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+article {
+  p {
+    padding: 5%;
+  }
+}
+
+.post-date {
+  margin: 0 10%;
+  padding: 10% 0 0 0;
+}
