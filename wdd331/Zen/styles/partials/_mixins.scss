@@ -1,0 +1,16 @@
+@mixin circle($deg, $dist) {
+   transform: rotate($deg) translateX($dist) rotate(-$deg);
+}
+
+@mixin sphere($width, $color) {
+   // height: $height;
+   width: $width;
+   aspect-ratio: 1 / 1;
+   background: $color;
+   border-radius: 50%;
+   background: radial-gradient(circle at $width / 3 $width / 3, $color, black);
+   box-shadow: $width / 10 $width / 10 $width / 5 rgba(0, 0 , 0, .2);
+}
+
+
+// @mixin orbit($num, )

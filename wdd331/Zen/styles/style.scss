@@ -1,0 +1,20 @@
+@import "./partials/layout";
+@import "./partials/colors";
+@import "./partials/typography";
+@import "./partials/mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import "./partials/intro";
+
+@import "./partials/main_content";
+
+@import "./partials/nav";
+
+
+@import "./partials/footer";
+

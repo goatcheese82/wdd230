@@ -1,0 +1,30 @@
+.intro {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   position: fixed;
+   top: 0;
+   background-color: black;
+   height: 15vh;
+   width: 100%;
+   z-index: 999;
+ }
+ 
+ .intro > * {
+   @include sphere(15vh, $color-3);
+   border-radius: 50%;
+   background-color: white;
+   color: black;
+   aspect-ratio: 1 / 1;
+   position: relative;
+   text-align: center;
+   max-height: 15vh;
+   overflow: hidden;
+ }
+ 
+ footer {
+   height: 10vh;
+ }
+ 
+ #zen-intro {
+   background: transparent;
+ }

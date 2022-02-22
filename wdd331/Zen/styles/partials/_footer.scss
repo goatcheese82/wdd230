@@ -1,0 +1,24 @@
+footer {
+   @include sphere(10vw, $color-4);
+   position: fixed;
+   bottom: 5vh;
+   left: 5vw;
+ }
+ 
+ footer a {
+   @include sphere(5vw, $color-4);
+   padding: 10px;
+ }
+
+
+ footer a::before {
+   content: '';
+   @include sphere(4vw, $color-2);
+   width: 2vw;
+   height: 2vw;
+   display: inline-block;
+   aspect-ratio: 1 / 1;
+   top: calc(50% - 1vw);
+   left: calc(50% - 1vw);
+   transition: height 1s, width 1s, transform 1s;
+}
