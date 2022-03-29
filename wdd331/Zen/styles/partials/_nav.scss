@@ -27,15 +27,15 @@
  }
  
  #design-selection {
-   @include circle($item-1, 5vw);
+   @include circle($item-1, 7vw);
  }
  
  #design-archives {
-   @include circle($item-2, 5vw)
+   @include circle($item-2, 7vw)
  }
  
  #zen-resources {
-   @include circle($item-3, 5vw)
+   @include circle($item-3, 7vw)
  }
  
  
@@ -46,14 +46,14 @@
  
  .wrapper > *::before {
     content: '';
-    @include sphere(2vw, $color-2);
-    width: 2vw;
-    height: 2vw;
+    @include sphere(4vw, $color-2);
+    width: 4vw;
+    height: 4vw;
     display: inline-block;
     aspect-ratio: 1 / 1;
-    top: calc(50% - 1vw);
-    left: calc(50% - 1vw);
-    transition: height 1s, width 1s, transform 1s;
+    top: calc(50% - 4vw);
+    left: calc(50% - 4vw);
+    transition: height .5s, width .5s, transform .5s;
  }
 
  
@@ -62,7 +62,7 @@
    height: 7vw;
    width: 7vw;
    transform: translate(-3vw, 2vw);
-   transition: height 1s, width 1s, transform 1s;
+   transition: height .5s, width .5s, transform .5s;
  }
 
  .wrapper > * li {

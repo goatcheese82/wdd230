@@ -220,6 +220,11 @@ footer {
   margin-bottom: 100vh;
 }
 
+main.supporting p {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
 .sidebar {
   position: fixed;
   right: 10vw;
@@ -252,18 +257,18 @@ footer {
 }
 
 #design-selection {
-  -webkit-transform: rotate(180deg) translateX(5vw) rotate(-180deg);
-          transform: rotate(180deg) translateX(5vw) rotate(-180deg);
+  -webkit-transform: rotate(180deg) translateX(7vw) rotate(-180deg);
+          transform: rotate(180deg) translateX(7vw) rotate(-180deg);
 }
 
 #design-archives {
-  -webkit-transform: rotate(240deg) translateX(5vw) rotate(-240deg);
-          transform: rotate(240deg) translateX(5vw) rotate(-240deg);
+  -webkit-transform: rotate(240deg) translateX(7vw) rotate(-240deg);
+          transform: rotate(240deg) translateX(7vw) rotate(-240deg);
 }
 
 #zen-resources {
-  -webkit-transform: rotate(300deg) translateX(5vw) rotate(-300deg);
-          transform: rotate(300deg) translateX(5vw) rotate(-300deg);
+  -webkit-transform: rotate(300deg) translateX(7vw) rotate(-300deg);
+          transform: rotate(300deg) translateX(7vw) rotate(-300deg);
 }
 
 .wrapper h3 {
@@ -272,23 +277,23 @@ footer {
 
 .wrapper > *::before {
   content: '';
-  width: 2vw;
+  width: 4vw;
   aspect-ratio: 1 / 1;
   background: #77aca2;
   border-radius: 50%;
-  background: radial-gradient(circle at 0.66667vw 0.66667vw, #77aca2, black);
-  -webkit-box-shadow: 0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.2);
-          box-shadow: 0.2vw 0.2vw 0.4vw rgba(0, 0, 0, 0.2);
-  width: 2vw;
-  height: 2vw;
+  background: radial-gradient(circle at 1.33333vw 1.33333vw, #77aca2, black);
+  -webkit-box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.2);
+          box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.2);
+  width: 4vw;
+  height: 4vw;
   display: inline-block;
   aspect-ratio: 1 / 1;
-  top: calc(50% - 1vw);
-  left: calc(50% - 1vw);
-  -webkit-transition: height 1s, width 1s, -webkit-transform 1s;
-  transition: height 1s, width 1s, -webkit-transform 1s;
-  transition: height 1s, width 1s, transform 1s;
-  transition: height 1s, width 1s, transform 1s, -webkit-transform 1s;
+  top: calc(50% - 4vw);
+  left: calc(50% - 4vw);
+  -webkit-transition: height .5s, width .5s, -webkit-transform .5s;
+  transition: height .5s, width .5s, -webkit-transform .5s;
+  transition: height .5s, width .5s, transform .5s;
+  transition: height .5s, width .5s, transform .5s, -webkit-transform .5s;
 }
 
 .wrapper > *:hover::before {
@@ -303,10 +308,10 @@ footer {
   width: 7vw;
   -webkit-transform: translate(-3vw, 2vw);
           transform: translate(-3vw, 2vw);
-  -webkit-transition: height 1s, width 1s, -webkit-transform 1s;
-  transition: height 1s, width 1s, -webkit-transform 1s;
-  transition: height 1s, width 1s, transform 1s;
-  transition: height 1s, width 1s, transform 1s, -webkit-transform 1s;
+  -webkit-transition: height .5s, width .5s, -webkit-transform .5s;
+  transition: height .5s, width .5s, -webkit-transform .5s;
+  transition: height .5s, width .5s, transform .5s;
+  transition: height .5s, width .5s, transform .5s, -webkit-transform .5s;
 }
 
 .wrapper > * li {

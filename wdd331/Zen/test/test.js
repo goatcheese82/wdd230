@@ -1,0 +1,10 @@
+
+let url = "http://www.w3.org/2000/svg";
+let test = document.getElementById("test");
+
+let sampleText = document.createElementNS(url, "text");
+test.append(sampleText);
+let textAppend = document.createElementNS(url, "textPath");
+sampleText.append(textAppend);
+textAppend.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed urna libero. Fusce rhoncus orci at felis convallis, at faucibus ante vestibulum. Suspendisse in sapien feugiat purus suscipit mattis in eu dolor. Praesent porta varius lectus eu bibendum. Donec quam tortor, congue sed enim a, eleifend aliquet ligula. Suspendisse eget elit sodales, elementum lacus vel, vehicula urna. Pellentesque in lobortis purus. Pellentesque rhoncus ac lorem scelerisque hendrerit. Pellentesque ullamcorper ex ac metus tincidunt eleifend. Praesent convallis eleifend erat, a condimentum justo ornare sit amet. Praesent tincidunt, nibh non placerat commodo, dui nibh tincidunt ipsum, sit amet pellentesque neque ante non dui. Donec vel neque non dolor sagittis gravida in non erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere tortor at rhoncus sagittiLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed urna libero. Fusce rhoncus orci at felis convallis, at faucibus ante vestibulum. Suspendisse in sapien feugiat purus suscipit mattis in eu dolor. Praesent porta varius lectus eu bibendum. Donec quam tortor, congue sed enim a, eleifend aliquet ligula. Suspendisse eget elit sodales, elementum lacus vel, vehicula urna. Pellentesque in lobortis purus. Pellentesque rhoncus ac lorem scelerisque hendrerit. Pellentesque ullamcorper ex ac metus tincidunt eleifend. Praesent convallis eleifend erat, a condimentum justo ornare sit amet. Praesent tincidunt, nibh non placerat commodo, dui nibh tincidunt ipsum, sit amet pellentesque neque ante non dui. Donec vel neque non dolor sagittis gravida in non erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere tortor at rhoncus sagitti";
+textAppend.setAttribute('href', '#MyPath');
