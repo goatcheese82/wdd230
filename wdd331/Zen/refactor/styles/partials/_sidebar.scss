@@ -51,27 +51,6 @@
     left: calc(50% - 4vw);
     transition: height .5s, width .5s, transform .5s;
  }
- 
-//  .wrapper > *::before {
-//     content: '';
-//     @include sphere(4vw, 4vw, $color-2);
-//     width: 4vw;
-//     height: 4vw;
-//     display: inline-block;
-//     aspect-ratio: 1 / 1;
-//     top: calc(50% - 4vw);
-//     left: calc(50% - 4vw);
-//     transition: height .5s, width .5s, transform .5s;
-//  }
-
- 
-//  .wrapper > *:hover::before {
-//    @include sphere(4vw, 4vw, $color-2);
-//    height: 7vw;
-//    width: 7vw;
-//    transform: translate(-3vw, 2vw);
-//    transition: height .5s, width .5s, transform .5s;
-//  }
 
  .wrapper > * li {
     display: flex;
