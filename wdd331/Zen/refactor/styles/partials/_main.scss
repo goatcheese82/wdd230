@@ -14,7 +14,7 @@
  .main.supporting > *:not(:last-child) {
    @include sphere(25vh, 25vh, $color-3);
    align-items: center;
-   bottom: 35vh;
+   bottom: 20vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -54,6 +54,7 @@
 
 main.supporting p {
    transform: translateX(200%);
+   width: 50vw;
 }
 
 @import "./explanation";

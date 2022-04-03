@@ -184,23 +184,72 @@ svg.spheres {
 }
 
 .intro {
-  max-height: 15vh;
+  position: fixed;
   display: -ms-grid;
   display: grid;
-  position: fixed;
-  top: 0;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+  .intro {
+    max-height: 15vh;
+    top: 0;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#zen-summary {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #zen-summary {
+    display: inline-block;
+  }
 }
 
 header h2 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
   position: fixed;
-  bottom: 5vh;
-  right: 0;
+  bottom: 0;
+  left: none;
+}
+
+@media only screen and (min-width: 600px) {
+  header h2 {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+    position: fixed;
+    bottom: 5vh;
+    right: 0;
+  }
+}
+
+#title > .spheres {
+  height: 40vw;
+  width: 40vw;
+  aspect-ratio: 1 / 1;
+  background: #468189;
+  border-radius: 50%;
+  background: radial-gradient(circle at 13.33333vw 13.33333vw, #468189, black);
+  -webkit-box-shadow: 4vw 4vw 8vw rgba(0, 0, 0, 0.2);
+          box-shadow: 4vw 4vw 8vw rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 5vh;
+}
+
+@media only screen and (min-width: 600px) {
+  #title > .spheres {
+    height: 25vw;
+    width: 25vw;
+    aspect-ratio: 1 / 1;
+    background: #468189;
+    border-radius: 50%;
+    background: radial-gradient(circle at 8.33333vw 8.33333vw, #468189, black);
+    -webkit-box-shadow: 2.5vw 2.5vw 5vw rgba(0, 0, 0, 0.2);
+            box-shadow: 2.5vw 2.5vw 5vw rgba(0, 0, 0, 0.2);
+  }
 }
 
 @-webkit-keyframes scrolling {
@@ -254,8 +303,15 @@ header h2 {
 }
 
 #zen-preamble {
-  overflow: hidden;
-  max-height: 20vh;
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #zen-preamble {
+    display: block;
+    overflow: hidden;
+    max-height: 20vh;
+  }
 }
 
 #zen-preamble *:not(:first-child) {
@@ -308,7 +364,7 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: 35vh;
+  bottom: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +443,7 @@ header h2 {
 main.supporting p {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
+  width: 50vw;
 }
 
 #zen-explanation h3 {
@@ -475,8 +532,14 @@ main.supporting p {
 
 .sidebar {
   position: fixed;
-  right: 10vw;
-  top: 30vh;
+  top: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    right: 5vw;
+    top: 30vh;
+  }
 }
 
 .wrapper {
@@ -488,11 +551,23 @@ main.supporting p {
   background: radial-gradient(circle at 3.33333vw 3.33333vw, #77aca2, black);
   -webkit-box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.2);
           box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.2);
-  position: relative;
+  position: fixed;
+  right: 10vw;
+  top: 5vh;
   width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.wrapper ul, .wrapper > * {
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    position: relative;
+  }
+}
+
+.wrapper ul,
+.wrapper > * {
   display: none;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -500,24 +575,35 @@ main.supporting p {
 
 .wrapper > * {
   display: block;
-  position: absolute;
-  top: calc(50% - 1vw);
-  left: calc(50% - 1vw);
 }
 
-#design-selection {
-  -webkit-transform: rotate(180deg) translateX(7vw) rotate(-180deg);
-          transform: rotate(180deg) translateX(7vw) rotate(-180deg);
+@media only screen and (min-width: 600px) {
+  .wrapper > * {
+    position: absolute;
+    top: calc(50% - 1vw);
+    left: calc(50% - 1vw);
+  }
 }
 
-#design-archives {
-  -webkit-transform: rotate(240deg) translateX(7vw) rotate(-240deg);
-          transform: rotate(240deg) translateX(7vw) rotate(-240deg);
+@media only screen and (min-width: 600px) {
+  #design-selection {
+    -webkit-transform: rotate(180deg) translateX(7vw) rotate(-180deg);
+            transform: rotate(180deg) translateX(7vw) rotate(-180deg);
+  }
 }
 
-#zen-resources {
-  -webkit-transform: rotate(300deg) translateX(7vw) rotate(-300deg);
-          transform: rotate(300deg) translateX(7vw) rotate(-300deg);
+@media only screen and (min-width: 600px) {
+  #design-archives {
+    -webkit-transform: rotate(240deg) translateX(7vw) rotate(-240deg);
+            transform: rotate(240deg) translateX(7vw) rotate(-240deg);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #zen-resources {
+    -webkit-transform: rotate(300deg) translateX(7vw) rotate(-300deg);
+            transform: rotate(300deg) translateX(7vw) rotate(-300deg);
+  }
 }
 
 .wrapper svg.spheres {
@@ -536,23 +622,33 @@ main.supporting p {
   display: inline-block;
   top: calc(50% - 4vw);
   left: calc(50% - 4vw);
-  -webkit-transition: height .5s, width .5s, -webkit-transform .5s;
-  transition: height .5s, width .5s, -webkit-transform .5s;
-  transition: height .5s, width .5s, transform .5s;
-  transition: height .5s, width .5s, transform .5s, -webkit-transform .5s;
+  -webkit-transition: height 0.5s, width 0.5s, -webkit-transform 0.5s;
+  transition: height 0.5s, width 0.5s, -webkit-transform 0.5s;
+  transition: height 0.5s, width 0.5s, transform 0.5s;
+  transition: height 0.5s, width 0.5s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .wrapper > * li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
-.design-selection:hover ul, .design-archives:hover ul, .zen-resources:hover ul {
+@media only screen and (min-width: 600px) {
+  .wrapper > * li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.design-selection:hover ul,
+.design-archives:hover ul,
+.zen-resources:hover ul {
+  position: absolute;
   list-style-type: none;
   cursor: pointer;
   display: -webkit-box;
@@ -566,9 +662,16 @@ main.supporting p {
 }
 
 footer {
-  margin: 2em;
   position: fixed;
-  right: 0;
+  left: none;
   bottom: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  footer {
+    margin: 2em;
+    right: 0;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

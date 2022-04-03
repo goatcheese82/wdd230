@@ -1,17 +1,38 @@
 .intro {
-   max-height: 15vh;
-   display: grid;
    position: fixed;
+   display: grid;
+   @include MQ(S) {
+   max-height: 15vh;
    top: 0;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;}
+}
+
+#zen-summary {
+   display: none;
+   @include MQ(S) {
+      display: inline-block;
+   }
 }
 
 header h2 {
+   position: fixed;
+   bottom: 0;
+   left: none;
+   @include MQ(S) {
    transform: rotate(90deg);
    transform-origin: top right;
    position: fixed;
    bottom: 5vh;
-   right: 0;
+   right: 0;}
+}
+
+#title > .spheres {
+   @include sphere(40vw, 40vw, $color-3);
+   position: fixed;
+   top: 5vh;
+   @include MQ(S) {
+      @include sphere(25vw, 25vw, $color-3)
+   }
 }
 
 @import "./preamble";

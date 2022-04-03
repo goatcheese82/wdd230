@@ -16,8 +16,3 @@ headings.forEach((i, index) => {
 })
 
 let navItems = document.querySelectorAll(".wrapper > div");
-
-// navItems.forEach((i, index) => {
-//    let placeHolder = makeSVG(i);
-//    i.append(placeHolder);
-// })
