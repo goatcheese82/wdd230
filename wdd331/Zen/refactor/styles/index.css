@@ -635,6 +635,8 @@ main.supporting p {
 
 @media only screen and (min-width: 600px) {
   .wrapper > * li {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -649,16 +651,24 @@ main.supporting p {
 .design-archives:hover ul,
 .zen-resources:hover ul {
   position: absolute;
-  list-style-type: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 10vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .design-selection:hover ul,
+  .design-archives:hover ul,
+  .zen-resources:hover ul {
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 10vw;
+  }
 }
 
 footer {
