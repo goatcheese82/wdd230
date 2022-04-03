@@ -1,0 +1,18 @@
+.intro {
+   max-height: 15vh;
+   display: grid;
+   position: fixed;
+   top: 0;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+header h2 {
+   transform: rotate(90deg);
+   transform-origin: top right;
+   position: fixed;
+   bottom: 5vh;
+   right: 0;
+}
+
+@import "./preamble";
+

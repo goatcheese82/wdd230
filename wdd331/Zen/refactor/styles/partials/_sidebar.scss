@@ -1,0 +1,87 @@
+.sidebar {
+   position: fixed;
+   right: 10vw;
+   top: 30vh;
+ }
+
+ $item-1: 180deg;
+ $item-2: 240deg;
+ $item-3: 300deg;
+ 
+ .wrapper {
+   @include sphere(10vw, 10vw, $color-2);
+   position: relative;
+   width: 10vw;
+ }
+ 
+ .wrapper ul, .wrapper > * {
+   display: none;
+   transform: translateX(0);
+ }
+ 
+ .wrapper > * {
+   display: block;
+   position: absolute;
+   top: calc(50% - 1vw);
+   left: calc(50% - 1vw);
+ }
+ 
+ #design-selection {
+   @include circle($item-1, 7vw);
+ }
+ 
+ #design-archives {
+   @include circle($item-2, 7vw)
+ }
+ 
+ #zen-resources {
+   @include circle($item-3, 7vw)
+ }
+ 
+ 
+ 
+ .wrapper svg.spheres {
+    cursor: pointer;
+    @include sphere(4vw, 4vw, $color-2);
+    font-size: 1.5em;
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+    top: calc(50% - 4vw);
+    left: calc(50% - 4vw);
+    transition: height .5s, width .5s, transform .5s;
+ }
+ 
+//  .wrapper > *::before {
+//     content: '';
+//     @include sphere(4vw, 4vw, $color-2);
+//     width: 4vw;
+//     height: 4vw;
+//     display: inline-block;
+//     aspect-ratio: 1 / 1;
+//     top: calc(50% - 4vw);
+//     left: calc(50% - 4vw);
+//     transition: height .5s, width .5s, transform .5s;
+//  }
+
+ 
+//  .wrapper > *:hover::before {
+//    @include sphere(4vw, 4vw, $color-2);
+//    height: 7vw;
+//    width: 7vw;
+//    transform: translate(-3vw, 2vw);
+//    transition: height .5s, width .5s, transform .5s;
+//  }
+
+ .wrapper > * li {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .design-selection:hover ul, .design-archives:hover ul, .zen-resources:hover ul {
+   list-style-type: none;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   width: 10vw;
+ }

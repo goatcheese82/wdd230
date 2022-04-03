@@ -1,9 +1,11 @@
-import { textCurve } from "./textCurve.js";
+import { pCurve, textCurve } from "./textCurve.js";
 
-let texts = document.querySelectorAll("h3");
-for (let i = 0; i < texts.length; i++) {
-   textCurve(texts[i], i, 5)
+let headings = document.querySelectorAll("h3");
+for (let i = 0; i < headings.length; i++) {
+   i.id = `h3${i + 1}`;
 }
 
-let title = document.getElementById("banner");
-textCurve(title, 0, 1)
+let title = document.querySelectorAll('[role="banner"] h1')
+let titleText = title.firstChild;
+
+pCurve(titleText, 1);

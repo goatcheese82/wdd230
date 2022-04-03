@@ -38,7 +38,6 @@ export const textCurve = (node, index, rings) => {
    node.innerHTML = '';
    node.append(newSvg);
 }
-
 export const pCurve = (node, index) => {
-   
+   console.log(node);   
 }
