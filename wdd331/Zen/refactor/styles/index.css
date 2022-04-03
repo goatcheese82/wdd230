@@ -226,6 +226,10 @@ header h2 {
   }
 }
 
+#title {
+  width: 10em;
+}
+
 #title > .spheres {
   height: 40vw;
   width: 40vw;
@@ -237,6 +241,8 @@ header h2 {
           box-shadow: 4vw 4vw 8vw rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 5vh;
+  max-width: 20vh;
+  max-height: 20vh;
 }
 
 @media only screen and (min-width: 600px) {
@@ -249,6 +255,19 @@ header h2 {
     background: radial-gradient(circle at 8.33333vw 8.33333vw, #468189, black);
     -webkit-box-shadow: 2.5vw 2.5vw 5vw rgba(0, 0, 0, 0.2);
             box-shadow: 2.5vw 2.5vw 5vw rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  #title > .spheres {
+    height: 20vw;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    background: #468189;
+    border-radius: 50%;
+    background: radial-gradient(circle at 6.66667vw 6.66667vw, #468189, black);
+    -webkit-box-shadow: 2vw 2vw 4vw rgba(0, 0, 0, 0.2);
+            box-shadow: 2vw 2vw 4vw rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -616,7 +635,7 @@ main.supporting p {
   background: radial-gradient(circle at 1.33333vw 1.33333vw, #77aca2, black);
   -webkit-box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.2);
           box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.2);
-  font-size: 1.5em;
+  font-size: 1em;
   width: 5vw;
   height: 5vw;
   display: inline-block;
@@ -683,5 +702,9 @@ footer {
     right: 0;
     bottom: 0;
   }
+}
+
+.spheres {
+  font-size: .55em;
 }
 /*# sourceMappingURL=index.css.map */

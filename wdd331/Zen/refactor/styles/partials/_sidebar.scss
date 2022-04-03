@@ -59,7 +59,7 @@ $item-3: 300deg;
 .wrapper svg.spheres {
   cursor: pointer;
   @include sphere(4vw, 4vw, $color-2);
-  font-size: 1.5em;
+  font-size: 1em;
   width: 5vw;
   height: 5vw;
   display: inline-block;

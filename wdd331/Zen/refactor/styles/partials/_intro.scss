@@ -26,12 +26,22 @@ header h2 {
    right: 0;}
 }
 
+
+#title {
+   width: 10em;
+}
+
 #title > .spheres {
    @include sphere(40vw, 40vw, $color-3);
    position: fixed;
    top: 5vh;
+   max-width: 20vh;
+   max-height: 20vh;
    @include MQ(S) {
-      @include sphere(25vw, 25vw, $color-3)
+      @include sphere(25vw, 25vw, $color-3);
+   }
+   @include MQ(M) {
+      @include sphere(20vw, 20vw, $color-3);
    }
 }
 
